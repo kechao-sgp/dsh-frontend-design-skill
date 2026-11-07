@@ -13,7 +13,7 @@ dsh plugin --profile web add dsh-frontend-design-skill
 From source:
 
 ```sh
-dsh plugin --profile web add github:kechao1990/dsh-frontend-design-skill
+dsh plugin --profile web add github:kechao-sgp/dsh-frontend-design-skill
 ```
 
 Restart `dsh web` afterwards. On DSH Desktop, install it from **Settings → Plugins**.

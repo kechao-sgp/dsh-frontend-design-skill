@@ -72,10 +72,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kechao1990/dsh-frontend-design-skill.git"
+    "url": "git+https://github.com/kechao-sgp/dsh-frontend-design-skill.git"
   },
-  "homepage": "https://github.com/kechao1990/dsh-frontend-design-skill#readme",
+  "homepage": "https://github.com/kechao-sgp/dsh-frontend-design-skill#readme",
   "bugs": {
-    "url": "https://github.com/kechao1990/dsh-frontend-design-skill/issues"
+    "url": "https://github.com/kechao-sgp/dsh-frontend-design-skill/issues"
   }
 }
