@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="dsh-deepseek-frontend-design">
+  <rect width="512" height="512" rx="96" fill="#14110F"/>
+  <rect x="96" y="96" width="128" height="128" rx="10" fill="#E8E2D6"/>
+  <rect x="240" y="96" width="176" height="56" rx="8" fill="#E8E2D6"/>
+  <rect x="240" y="168" width="104" height="56" rx="8" fill="#6E6558"/>
+  <rect x="96" y="240" width="320" height="24" rx="6" fill="#E8E2D6"/>
+  <rect x="96" y="288" width="200" height="128" rx="10" fill="#2F6F62"/>
+  <rect x="312" y="288" width="104" height="128" rx="10" fill="#E8E2D6"/>
+</svg>
