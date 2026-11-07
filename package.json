@@ -60,10 +60,10 @@
   },
   "engines": {
     "node": ">=20.0.0",
-    "dsh": ">=0.2.2-0 <0.4.0"
+    "dsh": ">=0.2.2-0 <0.3.0 || >=0.3.0-rc.0 <0.4.0"
   },
   "peerDependencies": {
-    "@deepseek-ai/dsh": ">=0.2.2-0 <0.4.0"
+    "@deepseek-ai/dsh": ">=0.2.2-0 <0.3.0 || >=0.3.0-rc.0 <0.4.0"
   },
   "peerDependenciesMeta": {
     "@deepseek-ai/dsh": {
