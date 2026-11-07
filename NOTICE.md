@@ -1,5 +1,5 @@
-dsh-deepseek-frontend-design
-Copyright 2026 the dsh-deepseek-frontend-design authors
+dsh-frontend-design-skill
+Copyright 2026 the dsh-frontend-design-skill authors
 
 This product includes an approach informed by Anthropic's "frontend-design"
 skill, distributed under the Apache License 2.0:

@@ -1,5 +1,5 @@
 {
-  "name": "dsh-deepseek-frontend-design",
+  "name": "dsh-frontend-design-skill",
   "version": "0.1.0",
   "description": "DeepSeek 版前端设计技能：先出设计计划与 token 再写代码，附中文排版规则与无视觉自检。A frontend-design skill for DeepSeek Harness: design plan and tokens before code, Chinese typography, and a no-vision self-check.",
   "type": "module",
@@ -72,10 +72,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kechao-sgp/dsh-deepseek-frontend-design.git"
+    "url": "git+https://github.com/kechao1990/dsh-frontend-design-skill.git"
   },
-  "homepage": "https://github.com/kechao-sgp/dsh-deepseek-frontend-design#readme",
+  "homepage": "https://github.com/kechao1990/dsh-frontend-design-skill#readme",
   "bugs": {
-    "url": "https://github.com/kechao-sgp/dsh-deepseek-frontend-design/issues"
+    "url": "https://github.com/kechao1990/dsh-frontend-design-skill/issues"
   }
 }

@@ -1,4 +1,4 @@
-# dsh-deepseek-frontend-design
+# dsh-frontend-design-skill
 
 给 DeepSeek Harness 的前端设计技能：**先出设计计划与 token，再写代码**，附中文排版规则和无视觉自检表。
 
@@ -7,13 +7,13 @@
 ## 装
 
 ```sh
-dsh plugin --profile web add dsh-deepseek-frontend-design
+dsh plugin --profile web add dsh-frontend-design-skill
 ```
 
 或从源码装：
 
 ```sh
-dsh plugin --profile web add github:kechao-sgp/dsh-deepseek-frontend-design
+dsh plugin --profile web add github:kechao1990/dsh-frontend-design-skill
 ```
 
 装完重启 `dsh web`。桌面端请在 **设置 → 插件** 里安装。

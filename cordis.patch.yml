@@ -1,4 +1,4 @@
-# dsh-deepseek-frontend-design bundle layer: register the packaged design skill
+# dsh-frontend-design-skill bundle layer: register the packaged design skill
 # as an agent skill. This file is the `dsh.bundle.patch` layer
 # (see package.json#dsh.bundle.patch).
 #
@@ -6,7 +6,7 @@
 # composed config. Later layers override a row by `id` (whole-config replacement).
 - insert:
     # `id`: stable row identifier used by later layers to override this row.
-    - id: dsh-deepseek-frontend-design
+    - id: dsh-frontend-design-skill
       # `name`: the module the loader imports; resolves to this package's entry
       # (package.json#main → index.js).
-      name: dsh-deepseek-frontend-design
+      name: dsh-frontend-design-skill

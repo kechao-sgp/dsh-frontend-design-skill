@@ -1,4 +1,4 @@
-# dsh-deepseek-frontend-design
+# dsh-frontend-design-skill
 
 A frontend-design skill for DeepSeek Harness: **a design plan and token system before any code**, plus Chinese typography rules and a no-vision self-check.
 
@@ -7,13 +7,13 @@ It does one thing: after install it registers a single `deepseek-frontend-design
 ## Install
 
 ```sh
-dsh plugin --profile web add dsh-deepseek-frontend-design
+dsh plugin --profile web add dsh-frontend-design-skill
 ```
 
 From source:
 
 ```sh
-dsh plugin --profile web add github:kechao-sgp/dsh-deepseek-frontend-design
+dsh plugin --profile web add github:kechao1990/dsh-frontend-design-skill
 ```
 
 Restart `dsh web` afterwards. On DSH Desktop, install it from **Settings → Plugins**.

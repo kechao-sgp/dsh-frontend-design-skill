@@ -1,4 +1,4 @@
-// dsh-deepseek-frontend-design bundle entry: registers the packaged
+// dsh-frontend-design-skill bundle entry: registers the packaged
 // skills/deepseek-frontend-design/SKILL.md on ctx.skills.
 //
 // Registration is an effect: the disposer returned by ctx.skills.register()
@@ -9,7 +9,7 @@ import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-export const name = 'dsh-deepseek-frontend-design'
+export const name = 'dsh-frontend-design-skill'
 export const inject = ['skills']
 
 const packageRoot = dirname(fileURLToPath(import.meta.url))
