@@ -17,7 +17,8 @@
     "README.en.md",
     "LICENSE",
     "NOTICE.md",
-    "icon.svg"
+    "icon.svg",
+    "assets"
   ],
   "keywords": [
     "dsh",
@@ -68,5 +69,13 @@
     "@deepseek-ai/dsh": {
       "optional": true
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kechao-sgp/dsh-deepseek-frontend-design.git"
+  },
+  "homepage": "https://github.com/kechao-sgp/dsh-deepseek-frontend-design#readme",
+  "bugs": {
+    "url": "https://github.com/kechao-sgp/dsh-deepseek-frontend-design/issues"
   }
 }

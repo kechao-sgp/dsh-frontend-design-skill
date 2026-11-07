@@ -13,7 +13,7 @@ dsh plugin --profile web add dsh-deepseek-frontend-design
 或从源码装：
 
 ```sh
-dsh plugin --profile web add github:OWNER/dsh-deepseek-frontend-design
+dsh plugin --profile web add github:kechao-sgp/dsh-deepseek-frontend-design
 ```
 
 装完重启 `dsh web`。桌面端请在 **设置 → 插件** 里安装。

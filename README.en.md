@@ -13,7 +13,7 @@ dsh plugin --profile web add dsh-deepseek-frontend-design
 From source:
 
 ```sh
-dsh plugin --profile web add github:OWNER/dsh-deepseek-frontend-design
+dsh plugin --profile web add github:kechao-sgp/dsh-deepseek-frontend-design
 ```
 
 Restart `dsh web` afterwards. On DSH Desktop, install it from **Settings → Plugins**.
