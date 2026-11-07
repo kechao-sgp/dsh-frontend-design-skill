@@ -12,5 +12,7 @@ two-pass plan/review workflow, the anti-template idea and the "spend boldness
 in one place" principle are carried over, the wording, structure, examples,
 Chinese typography rules and the no-vision self-check are original.
 
-Anthropic's original skill carries its own LICENSE.txt (Apache-2.0); no
-Anthropic source files are redistributed here.
+For change tracking, upstream/SKILL.md keeps an unmodified copy of that work
+alongside its Apache-2.0 text in upstream/LICENSE.txt and the sha256 it was
+taken at in upstream/upstream.json. That copy is reference material only — it
+is not shipped in the npm tarball and is never loaded by the plugin.

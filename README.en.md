@@ -27,6 +27,17 @@ The original assumes a Claude-class model with screenshot review and English-fir
 3. **Chinese typography.** Font stacks, a 16px floor, 1.7–1.9 line height, 28–40 characters per line, CJK/Latin spacing, punctuation and numeral rules. English typesetting rules break on Chinese text.
 4. **A 2026 anti-slop list.** Purple gradients, glassmorphism kits, centered heroes, per-section fade-ups, emoji icons, 01/02/03 numbering, `A · B · C` meta rows — replaced unless the brief asks for them.
 
+## Upstream
+
+Anthropic's [frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) keeps moving. `upstream/` holds a copy pinned by sha256; `.github/workflows/upstream-watch.yml` compares it weekly and opens an issue with the diff when it moves.
+
+```sh
+npm run sync:upstream          # compare; exit 1 means upstream moved
+npm run sync:upstream:apply    # re-pin the copy and hash (does not update the skill)
+```
+
+Porting is a judgement call, not a copy: read the diff in `.upstream-report.md`, decide what earns a place, then edit `skills/deepseek-frontend-design/SKILL.md`.
+
 ## Compatibility
 
 - dsh `>= 0.2.2-0 < 0.4.0`, Node.js `>= 20`.

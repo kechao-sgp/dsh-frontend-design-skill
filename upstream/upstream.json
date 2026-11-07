@@ -1,0 +1,9 @@
+{
+  "repo": "anthropics/skills",
+  "path": "skills/frontend-design/SKILL.md",
+  "url": "https://raw.githubusercontent.com/anthropics/skills/main/skills/frontend-design/SKILL.md",
+  "license": "Apache-2.0",
+  "sha256": "d91970639e9f5c37682ac7ab60094d35f1c7c1f38d731bd56396563aee10c1d3",
+  "fetchedAt": "2026-11-07",
+  "note": "Upstream reference copy, kept only so changes can be diffed. The shipped skill is an independent Chinese rewrite under skills/deepseek-frontend-design/SKILL.md."
+}

@@ -66,3 +66,10 @@ test('apply() registers one bundled skill whose resourceBase is the skill direct
   assert.equal(skill.description, description)
   assert.equal(skill.content, body)
 })
+
+test('the pinned upstream copy matches the hash recorded next to it', async () => {
+  const { createHash } = await import('node:crypto')
+  const meta = JSON.parse(readFileSync(join(skillRoot, '..', '..', 'upstream', 'upstream.json'), 'utf8'))
+  const copy = readFileSync(join(skillRoot, '..', '..', 'upstream', 'SKILL.md'))
+  assert.equal(createHash('sha256').update(copy).digest('hex'), meta.sha256, 'run: npm run sync:upstream:apply')
+})

@@ -27,6 +27,17 @@ dsh plugin --profile web add github:kechao-sgp/dsh-frontend-design-skill
 3. **中文排版专章**：字体栈、16px 下限、1.7–1.9 行高、每行 28–40 字、中西文混排空格、标点与数字规则。原版的英文排版规则直接套中文会坏。
 4. **2026 版去 AI 味清单**：紫蓝渐变、毛玻璃三件套、居中 hero、全 section fade-up、emoji 图标、01/02/03、`A · B · C` 元信息行等默认值，出现即改（brief 明确要求除外）。
 
+## 跟上游
+
+上游 [anthropics/skills 的 frontend-design](https://github.com/anthropics/skills/tree/main/skills/frontend-design) 还在动。仓库里 `upstream/` 存了一份带 sha256 的副本，`.github/workflows/upstream-watch.yml` 每周一比对一次，变了就开 issue 并在里面贴出增删行。
+
+```sh
+npm run sync:upstream          # 比对，退出码 1 表示上游变了
+npm run sync:upstream:apply    # 刷新上游副本和 sha（不等于是改好中文技能）
+```
+
+改中文技能是判断活，不是覆盖：看 `.upstream-report.md` 里的 diff，决定哪几条值得移植，再改 `skills/deepseek-frontend-design/SKILL.md`。
+
 ## 用
 
 正常提需求即可，例如"做一个咖啡烘焙工作室的落地页"、"把这个后台的表格页重做一遍"。技能被加载后，回答会先给设计计划再给代码，最后附自检表。
@@ -47,6 +58,8 @@ skills/deepseek-frontend-design/SKILL.md   技能正文
   references/typography-cn.md              中文排版细节
   references/critique.md                   可测量的自检方法
 tests/plugin.test.mjs                      完整性检查（npm test）
+scripts/check-upstream.mjs                 上游比对（npm run sync:upstream）
+upstream/                                  上游副本 + sha256 记录
 ```
 
 ## 许可

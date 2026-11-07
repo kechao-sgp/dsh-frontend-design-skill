@@ -1,0 +1,42 @@
+name: upstream-watch
+
+# 上游 anthropics/skills 的 frontend-design 技能一有改动就开 issue。
+# 只负责"发现"；把变化判断后移植进中文技能仍然是人的活（见 .upstream-report.md）。
+on:
+  schedule:
+    - cron: '0 3 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Compare pinned upstream copy with the live one
+        id: check
+        continue-on-error: true
+        run: node scripts/check-upstream.mjs
+
+      - name: File or update an issue
+        if: steps.check.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          existing=$(gh issue list --state open --search 'upstream frontend-design in:title' --json number --jq '.[0].number // empty')
+          if [ -n "$existing" ]; then
+            gh issue comment "$existing" --body-file .upstream-report.md
+          else
+            gh issue create --title "Upstream frontend-design skill changed" --body-file .upstream-report.md
+          fi
+
+      - name: Fail the run when upstream moved
+        if: steps.check.outcome == 'failure'
+        run: exit 1
